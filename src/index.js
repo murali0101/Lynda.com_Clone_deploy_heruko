@@ -7,7 +7,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.json());
-app.post("", (req, res) => { 
+app.get("", (req, res) => { 
   res.status(200).send("welcome to lynda.com")
 });
 const { register, login } = require("./controllers/auth.controller");
