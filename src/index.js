@@ -7,7 +7,9 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.json());
-
+app.post("", (req, res) => { 
+  res.status(200).send("welcome to lynda.com")
+});
 const { register, login } = require("./controllers/auth.controller");
 const new_releasesController = require("./controllers/new_releases.controller");
 const html_courseController = require("./controllers/html_course.controller");
